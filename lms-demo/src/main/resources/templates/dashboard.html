@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>系统主页</title>
+</head>
+<body>
+<h2>欢迎进入系统</h2>
+
+<p th:text="'欢迎你，' + ${user.username} + '！'"></p>
+
+<a th:href="@{/login}">退出登录</a>
+
+<hr>
+<h3>这里可以扩展其他功能，比如：</h3>
+<ul>
+    <li>个人信息管理</li>
+    <li>课程列表</li>
+    <li>作业提交</li>
+    <li>消息通知</li>
+</ul>
+</body>
+</html>
